@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Oswald:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="hiba-app">
+        <header class="hiba-headline">Weather Journal</header>
+        <div class="hiba-form-container">
+            <div class="hiba-holder hiba-zip">
+                <input type="text" id="hiba-zip" placeholder="Enter Zipcode" />
+                <small id="hiba-error"></small>
+            </div>
+            <div class="hiba-holder hiba-feel">
+                <textarea id="hiba-feelings" placeholder="How are you feeling today?" rows="5"></textarea>
+                <button id="hiba-generate" type="submit">Generate</button>
+            </div>
+        </div>
+        <div id="hiba-entry">
+            <div class="hiba-title">Most Recent Entry</div>
+            <div id="hiba-entryHolder">
+                <div id="hiba-temp"></div>
+                <div id="hiba-city"></div>
+                <div id="hiba-description"></div>
+                <div id="hiba-date"></div>
+                <div id="hiba-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
